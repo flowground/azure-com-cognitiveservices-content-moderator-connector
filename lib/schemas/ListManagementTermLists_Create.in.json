@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "Description": {
+                    "description": "Description of the list.",
+                    "type": "string"
+                },
+                "Metadata": {
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "description": "Metadata of the list.",
+                    "type": "object"
+                },
+                "Name": {
+                    "description": "Name of the list.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Content_Type": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

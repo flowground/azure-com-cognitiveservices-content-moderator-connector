@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "ContentType": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "Image",
+                "Text",
+                "Video"
+            ]
+        },
+        "ContentId": {
+            "required": true,
+            "type": "string"
+        },
+        "WorkflowName": {
+            "required": true,
+            "type": "string"
+        },
+        "CallBackEndpoint": {
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "ContentValue": {
+                    "description": "Content to evaluate for a job.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "ContentValue"
+            ],
+            "type": "object"
+        },
+        "Content_Type": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "application/json",
+                "image/jpeg"
+            ]
+        }
+    }
+}

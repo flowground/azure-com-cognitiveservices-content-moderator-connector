@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "reviewId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

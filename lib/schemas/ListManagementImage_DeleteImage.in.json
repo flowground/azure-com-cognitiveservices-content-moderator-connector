@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "listId": {
+            "required": true,
+            "type": "string"
+        },
+        "ImageId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

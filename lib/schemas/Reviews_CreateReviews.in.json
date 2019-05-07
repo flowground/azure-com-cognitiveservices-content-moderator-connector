@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "properties": {
+        "UrlContentType": {
+            "required": true,
+            "type": "string"
+        },
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "subTeam": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Schema of the body.",
+            "items": {
+                "description": "Schema items of the body.",
+                "properties": {
+                    "CallbackEndpoint": {
+                        "description": "Optional CallbackEndpoint.",
+                        "type": "string"
+                    },
+                    "Content": {
+                        "description": "Content to review.",
+                        "type": "string"
+                    },
+                    "ContentId": {
+                        "description": "Content Identifier.",
+                        "type": "string"
+                    },
+                    "Metadata": {
+                        "description": "Optional metadata details.",
+                        "items": {
+                            "properties": {
+                                "Key": {
+                                    "description": "Your key parameter.",
+                                    "type": "string"
+                                },
+                                "Value": {
+                                    "description": "Your value parameter.",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "Key",
+                                "Value"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "Type": {
+                        "description": "Type of the content.",
+                        "enum": [
+                            "Image",
+                            "Text"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Content",
+                    "ContentId",
+                    "Type"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    }
+}

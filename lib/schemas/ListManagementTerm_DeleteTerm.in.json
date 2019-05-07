@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "listId": {
+            "required": true,
+            "type": "string"
+        },
+        "term": {
+            "required": true,
+            "type": "string"
+        },
+        "language": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

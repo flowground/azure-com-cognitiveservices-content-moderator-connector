@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "language": {
+            "required": true,
+            "type": "string"
+        },
+        "CacheImage": {
+            "type": "boolean"
+        },
+        "enhanced": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

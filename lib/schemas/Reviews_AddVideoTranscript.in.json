@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "reviewId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "format": "file",
+            "type": "object"
+        },
+        "Content_Type": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "text/plain"
+            ]
+        }
+    }
+}

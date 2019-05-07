@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "listId": {
+            "required": true,
+            "type": "string"
+        },
+        "language": {
+            "required": true,
+            "type": "string"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer"
+        }
+    }
+}

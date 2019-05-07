@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "reviewId": {
+            "required": true,
+            "type": "string"
+        },
+        "timescale": {
+            "required": false,
+            "type": "integer"
+        }
+    }
+}

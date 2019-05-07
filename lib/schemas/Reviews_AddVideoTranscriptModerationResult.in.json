@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "teamName": {
+            "required": true,
+            "type": "string"
+        },
+        "reviewId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Schema of the body.",
+            "items": {
+                "description": "Schema items of the body.",
+                "properties": {
+                    "Terms": {
+                        "description": "Optional metadata details.",
+                        "items": {
+                            "properties": {
+                                "Index": {
+                                    "description": "Index of the word",
+                                    "type": "integer"
+                                },
+                                "Term": {
+                                    "description": "Detected word.",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "Index",
+                                "Term"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "Timestamp": {
+                        "description": "Timestamp of the image.",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Timestamp",
+                    "Terms"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "Content_Type": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "language": {
+            "type": "string"
+        },
+        "autocorrect": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "PII": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "listId": {
+            "type": "string"
+        },
+        "classify": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "format": "file",
+            "type": "object"
+        },
+        "Content_Type": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "text/plain",
+                "text/html",
+                "text/xml",
+                "text/markdown"
+            ]
+        }
+    }
+}
